@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="whitespace-reset.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Advanced Form Layout</title>
+</head>
+<body>
+    <main>
+        <form>
+            <h1>Create Your Profile</h1>
+            <fieldset>
+                <h2>Personal Info</h2>
+                <dl>
+                    <dt>
+                        <label for="first_name">Your Name</label>
+                    </dt>
+                    <div class="flex-grid-multi-cols">
+                        <dd class="col-2">
+                            <input class="name_input" type="text" name="first_name" id="first_name" placeholder="First">
+                        </dd>
+                        <dd class="col-2">
+                            <input class="name_input" type="text" name="last_name" id="last_name" placeholder="Last">
+                        </dd>
+                    </div>
+                    <dt>
+                        <label for="email">Email</label>
+                    </dt>
+                    <dd class="flex-grid-single-col">
+                        <input class="col" type="email" name="email" id="email" autocomplete="none" autocapitalize="none" autocorrect="none">
+                    </dd>
+                </dl>
+            </fieldset>
+
+            <fieldset>
+                <h2>Social Media Accounts</h2>
+
+                <dl>
+                    <div class="flex-grid-multi-cols">
+                        <div class="col-3">
+                            <dt>
+                                <label for="facebook">Facebook</label>
+                            </dt>
+                            <dd>
+                                <input type="url" name="facebook" id="facebook">
+                            </dd>
+                        </div>
+                        <div class="col-3">
+                            <dt>
+                                <label for="twitter">Twitter</label>
+                            </dt>
+                            <dd>
+                                <input type="url" name="twitter" id="twitter">
+                            </dd>
+                        </div>
+                        <div class="col-3">
+                            <dt>
+                                <label for="linkedin">Linkedin</label>
+                            </dt>
+                            <dd>
+                                <input type="url" name="linkedin" id="linkedin">
+                            </dd>
+                        </div>
+                    </div>                             
+                </dl>
+            </fieldset>
+
+            <fieldset>
+                <h2>Account Info</h2>
+
+                <dl>
+                    <dt>
+                        <label for="profile_name">Profile Name</label>
+                    </dt>
+                    <dd class="flex-grid-single-col">
+                        <input class="col" type="text" name="profile_name" id="profile_name">
+                    </dd>
+                    <div class="flex-grid-multi-cols">
+                        <div class="col-2">
+                            <dt>
+                                <label for="password">Password</label>
+                            </dt>
+                            <dd>
+                                <input type="password" name="password" id="password">
+                            </dd>
+                        </div>
+                        <div class="col-2">
+                            <dt>
+                                <label for="verify_password">Confirm Password</label>
+                            </dt>
+                            <dd>
+                                <input type="password" name="verify_password" id="verify_password">
+                            </dd>
+                        </div>
+                    </div> 
+                </dl>
+            </fieldset>
+
+            <fieldset>
+                <dl>
+                    <dt>
+                        <label class="label-as-heading" for="bio">Bio</label>
+                    </dt>
+                    <dd class="flex-grid-single-col">
+                        <textarea class="col" id="bio" name="bio"></textarea>
+                    </dd>
+                </dl>
+            </fieldset>
+
+            <fieldset>
+                <ul>
+                    <li class="flex-grid-multi-cols">
+                        <input class="uneven-col-small" type="checkbox" name="agree" id="agree">
+                        <label class="agreement-text uneven-col-large" for="agree">
+                            <p>
+                                I agree to treat other users with respect, and will not say anything at all if I have nothing nice to say.
+                            </p>
+                        </label>                        
+                    </li>
+                    <li>
+                        <input type="submit" name="submit" value="Create Account">
+                    </li>
+                </ul>
+            </fieldset>
+        </form>
+    </main>
+</body>
+</html>

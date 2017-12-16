@@ -1,0 +1,148 @@
+* {
+	/*box-sizing: border-box;*/
+}
+
+body {
+	width: 100%;
+}
+
+main {
+}
+
+form {
+	max-width: 600px;
+	margin: 0 auto;
+	padding: 30px;
+}
+
+fieldset {
+	background-color: #ececec;
+	border-left:  5px solid #cdcccb;
+	margin-bottom: 2px;	
+}
+
+h1 {
+	font: normal 28px/24px Helvetica, sans-serif;
+	color: #282827;
+	margin-bottom: 30px;
+}
+
+h2 {     
+	font: bold 20px/24px Helvetica, sans-serif;
+    color: #333;
+    margin: 25px 35px 30px 35px;
+}
+
+label {
+	display: block;
+	font: bold 16px/24px Helvetica, sans-serif;
+	color: #666;
+}
+
+input {
+	box-sizing: border-box;
+	height: 40px;
+}
+
+input,
+textarea {
+	padding: 10px 15px;	
+	border-radius: 4px;
+	border: 1px solid #0066CC;	
+	margin-bottom: 30px;
+}
+
+dl {
+	max-width: 530px;
+	margin: 0 35px;
+	padding-bottom: 20px;
+}
+
+textarea {
+	height: 100px;
+}
+
+input[name="agree"] {
+	float: left;
+	margin-bottom: 0;
+	margin-left: 35px;
+}
+
+input[type="submit"] {
+	margin-left: 35px;
+	margin-bottom: 30px;
+	font: bold 16px Helvetica, sans-serif;
+	content: #fff;
+	padding: 15px 30px 30px 30px;
+	background-color: #0066CC;
+	color: #fff;
+}
+
+input[type="submit"]:hover,
+input[type="submit"]:focus {
+	background-color: #6699cc;
+	border: 1px solid #6699cc;	
+}
+
+label > p {
+	margin-right: 35px;
+}
+
+ul li {
+	margin: 25px 0 30px 0;
+}
+
+li:last-of-type {
+	margin-bottom: 0;
+}
+
+.clearfix {
+	clear: both;
+}
+
+.agreement-text {
+	font: normal 14px/16px Helvetica, sans-serif;
+	float: left;
+	width: 90%;
+}
+
+.label-as-heading {
+	font: bold 20px/24px Helvetica, sans-serif;
+    color: #333;
+    margin: 25px 0 30px 0;
+}
+
+.flex-grid-single-col{
+	display: flex;
+}
+
+.flex-grid-multi-cols {
+	display: flex;
+	justify-content: space-between;
+}
+
+.flex-grid-multi-cols .col-3 {
+	width: 30%;
+}
+
+.flex-grid-multi-cols .col-2 {
+	width: 49%;
+}
+
+.flex-grid-single-col .col {
+	flex: 1;
+}
+
+.flex-grid-multi-cols .uneven-col-small {
+	width: 2%;
+}
+
+.flex-grid-multi-cols .uneven-col-large {
+	width: 90%;
+}
+
+.col input,
+.col-2 input,
+.col-3 input {
+	width: 100%;
+}
